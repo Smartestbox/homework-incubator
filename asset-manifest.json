@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/homework-first-month-first-week-autocheck/static/css/main.6126c45d.css",
-    "main.js": "/homework-first-month-first-week-autocheck/static/js/main.9e638f83.js",
+    "main.css": "/homework-first-month-first-week-autocheck/static/css/main.892e3895.css",
+    "main.js": "/homework-first-month-first-week-autocheck/static/js/main.66001d21.js",
     "static/js/787.66cb4309.chunk.js": "/homework-first-month-first-week-autocheck/static/js/787.66cb4309.chunk.js",
     "static/media/avatar.png": "/homework-first-month-first-week-autocheck/static/media/avatar.d947cb9d0d13765666b6.png",
     "index.html": "/homework-first-month-first-week-autocheck/index.html",
-    "main.6126c45d.css.map": "/homework-first-month-first-week-autocheck/static/css/main.6126c45d.css.map",
-    "main.9e638f83.js.map": "/homework-first-month-first-week-autocheck/static/js/main.9e638f83.js.map",
+    "main.892e3895.css.map": "/homework-first-month-first-week-autocheck/static/css/main.892e3895.css.map",
+    "main.66001d21.js.map": "/homework-first-month-first-week-autocheck/static/js/main.66001d21.js.map",
     "787.66cb4309.chunk.js.map": "/homework-first-month-first-week-autocheck/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6126c45d.css",
-    "static/js/main.9e638f83.js"
+    "static/css/main.892e3895.css",
+    "static/js/main.66001d21.js"
   ]
 }
