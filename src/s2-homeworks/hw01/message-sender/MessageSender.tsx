@@ -1,6 +1,6 @@
-import React, {useEffect, useRef, useState} from 'react'
-import { message0 } from '../HW1'
-import s from './MessageSender.module.css'
+import React, {useEffect, useRef, useState} from 'react';
+import { message0 } from '../HW1';
+import s from './MessageSender.module.css';
 
 // компонента, которая тестирует вашу компоненту (не изменять, any не трогать)
 const MessageSender = (props: any) => {
@@ -40,7 +40,7 @@ const MessageSender = (props: any) => {
     }
 
     return (
-        <>
+        <div className={s.messageSender}>
             {messages.map((m) => (
                 <M key={'message' + m.id} message={m} />
             ))}
@@ -69,7 +69,7 @@ const MessageSender = (props: any) => {
                     {/**/}
                 </button>
             </div>
-        </>
+        </div>
     )
 }
 
