@@ -4,6 +4,7 @@
     border: none;
     border-radius: 3px;
     padding: 5px 10px;
+    cursor: pointer;
 }
 
 .disabled {
@@ -28,7 +29,7 @@
 }
 
 .default:hover {
-
+    background-color: #024a92;
 }
 
 .red:hover {
@@ -36,7 +37,7 @@
 }
 
 .secondary:hover {
-
+    background-color: #f3f3f3;
 }
 
 
