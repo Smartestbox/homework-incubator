@@ -10,20 +10,25 @@ import s from './HW7.module.css'
 * 3 - в файле SuperRadio.tsx дописать name, checked, value (узнать для чего в радио name)
 * 4 - сделать стили в соответствии с дизайном
 * */
+export type ArrType = ArrObjType[]
 
-const arr = [
-    { id: 1, value: 'x' },
-    { id: 2, value: 'y' },
-    { id: 3, value: 'z' },
+export type ArrObjType = {
+    id: number
+    value: string
+}
+const arr: ArrType = [
+    { id: 1, value: 'Pre-junior' },
+    { id: 2, value: 'Junior' },
+    { id: 3, value: 'Junior +' },
 ] // value может быть изменено
 
 const HW7 = () => {
-    const [value, onChangeOption] = useState(1) // селект и радио должны работать синхронно
-
+    const [value, onChangeOption] = useState<number>(1) // селект и радио должны работать синхронно
     return (
         <div id={'hw7'}>
+            <hr/>
             <div className={s2.hwTitle}>Homework #7</div>
-
+            <hr/>
             {/*демонстрация возможностей компонент:*/}
             <div className={s2.hw}>
                 <div className={s.container}>
