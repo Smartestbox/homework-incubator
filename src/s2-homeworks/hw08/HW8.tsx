@@ -55,28 +55,30 @@ const HW8 = () => {
 
     return (
         <div id={'hw3'}>
+            <hr/>
             <div className={s2.hwTitle}>Homework #8</div>
+            <hr/>
             <div className={s2.hw}>
                 <div className={s.container}>
                     <div className={s.buttonsContainer}>
                         <SuperButton
                             id={'hw8-button-up'}
                             onClick={sortUp}
-                            xType={currentSort === 'up' ? '' : 'secondary'}
+                            xType={currentSort === 'up' ? 'default' : 'secondary'}
                         >
                             Sort up
                         </SuperButton>
                         <SuperButton
                             id={'hw8-button-down'}
                             onClick={sortDown}
-                            xType={currentSort === 'down' ? '' : 'secondary'}
+                            xType={currentSort === 'down' ? 'default' : 'secondary'}
                         >
                             Sort down
                         </SuperButton>
                         <SuperButton
                             id={'hw8-button-18'}
                             onClick={check18}
-                            xType={currentSort === '18' ? '' : 'secondary'}
+                            xType={currentSort === '18' ? 'default' : 'secondary'}
                         >
                             Check 18+
                         </SuperButton>

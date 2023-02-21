@@ -1,7 +1,6 @@
 .button {
     background-color: #FFFFFF;
     color: black;
-    border: none;
     border-radius: 3px;
     padding: 5px 10px;
     cursor: pointer;
@@ -21,15 +20,18 @@
 .default {
     background-color: #0059b3;
     color: white;
+    border: 1px solid #0059b3;
 }
 
 .red {
     background-color: crimson;
     color: white;
+    border: 1px solid crimson;
 }
 
 .default:hover {
     background-color: #024a92;
+    border: 1px solid #024a92;
 }
 
 .red:hover {
