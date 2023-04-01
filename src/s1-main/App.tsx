@@ -20,7 +20,6 @@ function App() {
             <HW6/>
             <HW7/>
             <HW8 />
-            <HW9 />
         </div>
     )
 }
