@@ -1,3 +1,6 @@
 .loader {
     /*свг и/или анимация*/
+    height: 200px;
+    width: 200px;
+    background-image: url('./hw10-loader.svg');
 }
