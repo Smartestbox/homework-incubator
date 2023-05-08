@@ -22,6 +22,7 @@ const SuperSelect: React.FC<SuperSelectPropsType> = ({
     onChangeOption,
     ...restProps
 }) => {
+
     const mappedOptions: any[] = options
         ? options.map(o => (
               <option
