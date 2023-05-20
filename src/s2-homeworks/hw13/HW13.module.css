@@ -2,18 +2,22 @@
 }
 
 .responseContainer {
+    display: flex;
+    align-items: center;
 }
 
 .imageContainer {
 }
 
 .image {
+    padding-right: 10px ;
 }
 
 .textContainer{
 }
 
 .code {
+    font-size: 2rem;
 }
 
 .text {
