@@ -54,6 +54,7 @@ const HW15 = () => {
                 // делает студент
                 if (res) {
                     setTechs(res.data.techs)
+                    setTotalCount(res.data.totalCount)
                 }
                 // сохранить пришедшие данные
                 setLoading(false)
@@ -70,8 +71,7 @@ const HW15 = () => {
         const params = new URLSearchParams(window.location.search)
         params.set('page', newPage.toString())
         params.set('count', newCount.toString())
-        window.history.replaceState({}, '', `${window.location.pathname}?${params}`)
-
+        setSearchParams(params)
         // sendQuery(
         // setSearchParams(
         sendQuery({ page: newPage, count: newCount })
@@ -89,7 +89,8 @@ const HW15 = () => {
         const params = new URLSearchParams(window.location.search)
         params.set('page', '1')
         params.set('sort', newSort)
-        window.history.replaceState({}, '', `${window.location.pathname}?${params}`)
+        setSearchParams(params)
+        sendQuery({ page: 1, count, sort: newSort })
         //
     }
 
