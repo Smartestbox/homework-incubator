@@ -52,34 +52,44 @@ const HW15 = () => {
         getTechs(params)
             .then((res) => {
                 // делает студент
-
+                if (res) {
+                    setTechs(res.data.techs)
+                }
                 // сохранить пришедшие данные
-
+                setLoading(false)
                 //
             })
     }
 
     const onChangePagination = (newPage: number, newCount: number) => {
         // делает студент
-
+        setPage(newPage)
+        setCount(newCount)
         // setPage(
         // setCount(
+        const params = new URLSearchParams(window.location.search)
+        params.set('page', newPage.toString())
+        params.set('count', newCount.toString())
+        window.history.replaceState({}, '', `${window.location.pathname}?${params}`)
 
         // sendQuery(
         // setSearchParams(
-
+        sendQuery({ page: newPage, count: newCount })
         //
     }
 
     const onChangeSort = (newSort: string) => {
         // делает студент
-
+        setSort(newSort)
         // setSort(
         // setPage(1) // при сортировке сбрасывать на 1 страницу
-
+        setPage(1)
         // sendQuery(
         // setSearchParams(
-
+        const params = new URLSearchParams(window.location.search)
+        params.set('page', '1')
+        params.set('sort', newSort)
+        window.history.replaceState({}, '', `${window.location.pathname}?${params}`)
         //
     }
 
@@ -88,7 +98,7 @@ const HW15 = () => {
         sendQuery({page: params.page, count: params.count})
         setPage(+params.page || 1)
         setCount(+params.count || 4)
-    }, [])
+    }, [searchParams])
 
     const mappedTechs = techs.map(t => (
         <div key={t.id} className={s.row}>
